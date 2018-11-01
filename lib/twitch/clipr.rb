@@ -1,7 +1,8 @@
 require "twitch/clipr/version"
+require "twitch/clipr/client"
+
 
 module Twitch
   module Clipr
-    # Your code goes here...
   end
 end

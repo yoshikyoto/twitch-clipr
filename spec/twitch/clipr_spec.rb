@@ -3,7 +3,8 @@ RSpec.describe Twitch::Clipr do
     expect(Twitch::Clipr::VERSION).not_to be nil
   end
 
-  it "does something useful" do
-    expect(false).to eq(true)
+  it "can get video URL" do
+    client = Twitch::Clipr::Client.new()
+    client.get("test")
   end
 end
