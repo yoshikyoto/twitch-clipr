@@ -4,7 +4,10 @@ RSpec.describe Twitch::Clipr do
   end
 
   it "can get video URL" do
+    # 実際にAPIを叩くテストです
     client = Twitch::Clipr::Client.new()
-    client.get("test")
+    clip_url = "https://clips.twitch.tv/JazzyTsundereReindeerAMPEnergy"
+    expected_url = "https://clips-media-assets2.twitch.tv/AT-cm%7C333640464.mp4"
+    expect(client.get(clip_url)).to eq(expected_url)
   end
 end
