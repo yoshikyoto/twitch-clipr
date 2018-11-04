@@ -1,7 +1,7 @@
 PATH
   remote: .
   specs:
-    twitch-clipr (0.1.0)
+    twitch-clipr (0.1.1)
       faraday (~> 0.12)
 
 GEM
@@ -28,6 +28,7 @@ GEM
 
 PLATFORMS
   x64-mingw32
+  x86_64-linux
 
 DEPENDENCIES
   bundler (~> 1.16)
