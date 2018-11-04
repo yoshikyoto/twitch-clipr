@@ -1,5 +1,5 @@
 require "bundler/setup"
-require "twitch/clipr"
+require "twitch-clipr"
 
 RSpec.configure do |config|
   # Enable flags like --only-failures and --next-failure
