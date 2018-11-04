@@ -4,7 +4,7 @@
 
 Add this line to your application's Gemfile:
 
-```ruby
+```
 gem 'twitch-clipr'
 ```
 
@@ -23,6 +23,8 @@ $ gem install twitch-clipr
 ## Usage
 
 ```
+require "twitch-clipr"
+
 client = Twitch::Clipr::Client.new()
 download_url = client.get("https://clips.twitch.tv/JazzyTsundereReindeerAMPEnergy")
 ```
