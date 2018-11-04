@@ -14,6 +14,14 @@ module Twitch
         json = JSON.parse(response.body)
         json["download_url"]
       end
+
+      def download(download_url, destination_filepath)
+        client = Faraday.new()
+        response = client.get(download_url)
+        File.open(destination_filepath, 'wb') { |fp|
+          fp.write(response.body)
+        }
+      end
     end
   end
 end

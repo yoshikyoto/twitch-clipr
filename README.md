@@ -27,6 +27,7 @@ require "twitch-clipr"
 
 client = Twitch::Clipr::Client.new()
 download_url = client.get("https://clips.twitch.tv/JazzyTsundereReindeerAMPEnergy")
+client.download(download_url, "/tmp/clip.mp4")
 ```
 
 ## Contributing
